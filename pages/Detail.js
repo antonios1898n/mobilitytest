@@ -6,29 +6,6 @@ import { Alert,FlatList,Linking , View, Modal, Dimensions,PermissionsAndroid,Saf
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-import {
-    EmailShareButton,
-    FacebookShareButton,
-    HatenaShareButton,
-    InstapaperShareButton,
-    LineShareButton,
-    LinkedinShareButton,
-    LivejournalShareButton,
-    MailruShareButton,
-    OKShareButton,
-    PinterestShareButton,
-    PocketShareButton,
-    RedditShareButton,
-    TelegramShareButton,
-    TumblrShareButton,
-    TwitterShareButton,
-    ViberShareButton,
-    VKShareButton,
-    WhatsappShareButton,
-    WorkplaceShareButton,
-    Share
-  } from "react-share";
-
 function App ({route,navigation}){
     const {image}=route.params;
     const {uri}=route.params;
@@ -42,18 +19,6 @@ function App ({route,navigation}){
 
     useEffect(() => { 
     },[])
-    const mycustomshare = async()=>{
-        const shareoptions={
-            message:"jsjsjsjsjsjs"
-        }
-        // try{
-            // const shareresponse= 
-            await Share.open(shareoptions)
-        // }
-        // catch(error){
-        //     console.log(error)
-        // }
-    }
      return(
              <ScrollView >
                  
